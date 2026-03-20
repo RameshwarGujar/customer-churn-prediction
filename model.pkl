@@ -1,0 +1,22 @@
+import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+import pickle
+
+# Load data
+df = pd.read_excel("Telecom_Customer_Churn_Analysis.xlsx", engine='openpyxl')
+
+# Basic preprocessing
+df['Churn'] = df['Churn'].apply(lambda x: 1 if x == 'Yes' else 0)
+df = pd.get_dummies(df[['gender', 'tenure', 'MonthlyCharges', 'Contract']], drop_first=True)
+X = df.drop('Churn', axis=1)
+y = df['Churn']
+
+# Train model
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
+model = RandomForestClassifier()
+model.fit(X_train, y_train)
+
+# Save model
+with open('model.pkl', 'wb') as f:
+    pickle.dump(model, f)
