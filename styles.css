@@ -1,0 +1,163 @@
+.stApp {
+    background-color: #f0f2f6;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+h1, h2, h3 {
+    color:white;
+    font-weight: bold;
+}
+
+button[kind="primary"] {
+    background-color: #3498db;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button[kind="primary"]:hover {
+    background-color: #2d89c2;
+}
+
+.sidebar .css-1d391kg {
+    background-color: #f1f9ff;
+}
+
+footer, #MainMenu {
+    visibility: hidden;
+}
+
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1534447677768-be436bb09401");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white; 
+}
+
+h1, h2, h3 {
+    color: white;
+}
+
+.stApp {
+    background-color:rgba(0, 0, 0, 0.6); 
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.big-title {
+    font-size: 4rem;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+/* General text color */
+html, body, [class*="st-"] {
+    color: white !important;
+}
+
+/* Tabs text color */
+[data-testid="stTabs"] button {
+    color: white !important;
+}
+
+/* Active tab underline */
+[data-testid="stTabs"] button[aria-selected="true"] {
+    border-bottom: 3px solid red !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Sidebar text */
+.css-1v0mbdj, .css-1y4p8pa, .css-1dp5vir, .css-1d391kg, .css-1yycgk6 {
+    color: white !important;
+}
+
+/* Filter section headings */
+.sidebar .stSelectbox > label, .stSelectbox label {
+    color:black !important;
+}
+
+/* Markdown headings */
+h1, h2, h3, h4, h5, h6 {
+    color: white !important;
+}
+
+/* Big custom title (previous step) */
+.big-title {
+    font-size: 4rem;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+/* Optional: Add overlay for better text readability */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);  /* Overlay transparency */
+    z-index: -1;
+}
+/* ---------------- Global Styles ------------------ */
+html, body, [class*="st-"] {
+    color: white !important;
+    background-color: transparent !important;
+}
+
+/* ---------------- Sidebar Filters ---------------- */
+.css-1v0mbdj, .css-1y4p8pa, .css-1dp5vir, .css-1d391kg, .css-1yycgk6 {
+    color: white !important;
+}
+
+/* Label text inside selectboxes */
+.stSelectbox label, .css-16idsys {
+    color: white !important;
+}
+
+/* Selectbox text */
+.stSelectbox div[data-baseweb="select"] {
+    color: black !important;
+}
+
+/* ---------------- Tabs --------------------------- */
+[data-testid="stTabs"] button {
+    color: white !important;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+}
+
+[data-testid="stTabs"] button[aria-selected="true"] {
+    color: white !important;
+    border-bottom: 3px solid red !important;
+    font-weight: bold;
+}
+
+/* ---------------- Headings ----------------------- */
+h1, h2, h3, h4, h5, h6 {
+    color: white !important;
+}
+
+/* ---------------- Big Heading -------------------- */
+.big-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
